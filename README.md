@@ -68,7 +68,7 @@ To illustrate the type of machine learning work that a modernized data platform 
 
 This example demonstrates the full workflow that public health data scientists would be able to run more easily once data is centralized, governed, and accessible on a platform such as Databricks.
 
-→ See the notebook: [`notebooks/nhanes-diabetes-prediction.ipynb`](notebooks/nhanes-diabetes-prediction.ipynb)
+→ See the notebook: NHANES_diabetes_prediction.ipynb
 
 5. Key Takeaways
 
