@@ -99,8 +99,3 @@ Technologies & Tools Referenced
 - ML Example: Python, pandas, scikit-learn, XGBoost, Plotly
 - Data Source: NHANES (CDC)
 
----
-
-## Disclaimer
-
-This repository reflects personal experience and technical exploration related to public health cloud and data modernization concepts. It does not represent official positions, confidential client information, or internal Accenture deliverables.
