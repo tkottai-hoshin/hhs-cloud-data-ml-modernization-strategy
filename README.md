@@ -1,4 +1,4 @@
-Overview:
+  Overview:
 
 This repository documents the strategic approach and technical thinking behind a large-scale cloud modernization effort supporting public health organizations within the U.S. Department of Health and Human Services (HHS) ecosystem, with a focus on enabling modern data and machine learning capabilities for scientists, analysts, and public health researchers.
 
@@ -14,7 +14,7 @@ I led one of four discovery pods on a major cloud modernization engagement. My p
 - Public health scientists
 - Department heads
 - Data analytics and epidemiology teams
-- Application owners
+- Application & System owners
 
 The broader effort involved assessing a large portfolio of applications (800+) to determine cloud readiness and modernization pathways.
 
@@ -23,6 +23,7 @@ The broader effort involved assessing a large portfolio of applications (800+) t
 The COVID-19 pandemic exposed significant limitations in public health data infrastructure — fragmented systems, delayed data sharing, and limited ability to perform advanced analytics at scale. 
 
 In response, the Centers for Disease Control and Prevention (CDC) accelerated its **Data Modernization Initiative (DMI)** and related cloud modernization efforts. A key public contract in this space was the multi-year cloud modernization award to Accenture Federal Services to help migrate and modernize CDC systems into secure cloud environments.
+https://www.cdc.gov/public-health-data-strategy/php/index.html
 
 The core challenge was not simply moving applications to the cloud, but creating an environment where public health data could be:
 
@@ -32,39 +33,50 @@ The core challenge was not simply moving applications to the cloud, but creating
 
 3. Approach & Framework
 
-### Application Rationalization – The 7Rs Framework
+Application Rationalization – The 7Rs Framework
 
 Every application was evaluated using the industry-standard **7Rs** migration strategies:
 
-- **Retire** – Decommission redundant or obsolete systems
-- **Retain** – Keep certain systems on-premises when migration was not justified
-- **Rehost** – Lift-and-shift to cloud infrastructure
-- **Replatform** – Move with minor optimizations (e.g., managed databases)
-- **Replace / Repurchase** – Move to modern SaaS solutions
-- **Refactor / Rearchitect** – Rebuild for cloud-native capabilities
-- **Reimagine** – Redesign processes to fully leverage cloud and data platforms
+- Retire – Decommission redundant or obsolete systems
+- Retain – Keep certain systems on-premises when migration was not justified
+- Rehost – Lift-and-shift to cloud infrastructure
+- Replatform – Move with minor optimizations (e.g., managed databases)
+- Replace / Repurchase – Move to modern SaaS solutions
+- Refactor / Rearchitect – Rebuild for cloud-native capabilities
+- Reimagine – Redesign processes to fully leverage cloud and data platforms
 
 ### Target Architecture
 
-- **Cloud Platforms**: AWS and Azure (hybrid/multi-cloud strategy)
-- **Data Platform**: Databricks (Lakehouse architecture) as the foundation for analytics and machine learning
-- **Goal**: Enable governed, scalable data access so that scientists and analysts could perform modern data science without depending on fragmented legacy systems
+- Cloud Platforms: AWS and Azure (hybrid/multi-cloud strategy)
+- Data Platform: Databricks (Lakehouse architecture) as the foundation for analytics and machine learning
+- Goal: Enable governed, scalable data access so that scientists and analysts could perform modern data science without depending on fragmented legacy systems
 
 
 4. Technical Demonstration: NHANES Diabetes Risk Prediction
 
 To illustrate the type of machine learning work that a modernized data platform enables, this repository includes a complete end-to-end ML project using publicly available **NHANES** (National Health and Nutrition Examination Survey) data.
 
-### Project Summary
-- **Objective**: Predict Type 2 Diabetes risk in adults
-- **Data Sources**: NHANES Demographics, Laboratory (HbA1c), and Examination (Body Measures) files
-- **Key Steps**:
-  - Data ingestion, cleaning, and merging
+Project Summary
+- Objective: Predict Type 2 Diabetes risk in adults
+- Data Sources: NHANES Demographics, Laboratory (HbA1c), and Examination (Body Measures) files
+- Key Steps:
+  - Data ingestion, cleaning, and merging - Data from https://www.cdc.gov/nchs/nhanes/index.html
+           'P_BMX.xpt',
+           'P_GLU.xpt',
+           'P_DEMO.xpt',
+           'P_INS.xpt',
+           'P_GHB.xpt',
+           'P_BPXO.xpt',
+           'P_TCHOL.xpt'
+    
   - Feature engineering
   - Handling class imbalance
   - Model training (Logistic Regression, Random Forest, XGBoost)
   - Model evaluation and feature importance analysis
-- **Key Insight**: Age and waist circumference were the strongest predictors of diabetes risk in the dataset
+  - How to use past data to forecast future data
+  - Demo / POC for Department of Public Health, actual data from National Health AND Nutrition Examination Survey (NHANES)
+
+- Key Insight: Age and waist circumference were the strongest predictors of diabetes risk in the dataset
 
 This example demonstrates the full workflow that public health data scientists would be able to run more easily once data is centralized, governed, and accessible on a platform such as Databricks.
 
@@ -79,7 +91,7 @@ This example demonstrates the full workflow that public health data scientists w
 
 ---
 
-## Technologies & Tools Referenced
+Technologies & Tools Referenced
 
 - Cloud: AWS, Azure
 - Data Platform: Databricks
