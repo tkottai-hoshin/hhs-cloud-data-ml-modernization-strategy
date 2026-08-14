@@ -1,6 +1,6 @@
   Overview:
 
-This repository documents the strategic approach and technical thinking behind a large-scale cloud modernization effort supporting public health organizations within the U.S. Department of Health and Human Services (HHS) ecosystem, with a focus on enabling modern data and machine learning capabilities for scientists, analysts, and public health researchers.
+This repository documents the approach and technical thinking behind a large-scale cloud modernization effort supporting public health organizations within the U.S. Department of Health and Human Services (HHS) ecosystem, with a focus on enabling modern data and machine learning capabilities for scientists, analysts, and public health researchers.
 
 The work involved application portfolio assessment, cloud architecture strategy (AWS and Azure), and the design of a modern data platform approach using Databricks to support advanced analytics and machine learning use cases.
 
