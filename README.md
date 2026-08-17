@@ -70,6 +70,13 @@ Project Summary
            'P_TCHOL.xpt'
     
   - Feature engineering
+<img width="1960" height="1160" alt="image" src="https://github.com/user-attachments/assets/6bdd7812-118d-41d0-a492-aed3c841b8e1" />
+
+  
+  <img width="2484" height="1014" alt="image" src="https://github.com/user-attachments/assets/387cd2c8-7ff7-42e7-afef-f644bbac07f0" />
+  
+<img width="2460" height="958" alt="image" src="https://github.com/user-attachments/assets/67ead49e-5dc2-43a5-acc7-05d81986c671" />
+
   - Handling class imbalance
   - Model training (Logistic Regression, Random Forest, XGBoost)
   - Model evaluation and feature importance analysis
